@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/calender"
+        android:iconTint="@color/black"
+        android:title="calender"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/nymcalender"
+        />
+    <item
+        android:id="@+id/note"
+        android:title="note"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/note"
+        />
+
+    <item
+        android:id="@+id/fvrt"
+        android:title="fvrt"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/fvrt"
+        />
+
+    <item
+        android:id="@+id/settings"
+        android:title="settings"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/settings"
+        />
+
+
+
+</menu>
