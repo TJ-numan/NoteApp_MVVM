@@ -4,29 +4,30 @@
 
     <item
         android:id="@+id/calender"
-        android:iconTint="@color/black"
         android:title="calender"
-        app:showAsAction="ifRoom"
         android:icon="@drawable/nymcalender"
         />
     <item
         android:id="@+id/note"
         android:title="note"
-        app:showAsAction="ifRoom"
         android:icon="@drawable/note"
         />
 
     <item
+        android:visible="true"
         android:id="@+id/fvrt"
-        android:title="fvrt"
-        app:showAsAction="ifRoom"
-        android:icon="@drawable/fvrt"
+        android:title=""
         />
 
     <item
         android:id="@+id/settings"
         android:title="settings"
-        app:showAsAction="ifRoom"
+        android:icon="@drawable/settings"
+        />
+
+    <item
+        android:id="@+id/menu_item"
+        android:title="settings"
         android:icon="@drawable/settings"
         />
 
