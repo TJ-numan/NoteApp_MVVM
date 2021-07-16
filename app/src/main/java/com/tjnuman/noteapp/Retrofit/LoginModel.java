@@ -27,4 +27,6 @@ public class LoginModel {
     public void setPassword(String password) {
         this.Password = password;
     }
+
+
 }

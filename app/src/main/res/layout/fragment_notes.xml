@@ -5,10 +5,33 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.NotesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:text="Notes fragment"
+        android:gravity="center"
+        android:layout_height="match_parent"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:background="#ECEBEB"
+        android:layout_height="560dp"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/newnotebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#cc0c52"
+
+        android:layout_marginTop="565dp"
+        android:src="@drawable/dd"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        tools:ignore="MissingConstraints" />
+
 
 </FrameLayout>

@@ -20,11 +20,11 @@ public class DashboardActivity extends AppCompatActivity { //run den vai dekhi
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //dashboardBinding = ActivityDashboardBinding.inflate(getLayoutInflater());
+        dashboardBinding = ActivityDashboardBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(dashboardBinding.getRoot());
 
-        /*dashboardBinding.navView.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
+        dashboardBinding.bottomNavigation.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
             @Override
             public void onNavigationItemReselected(@NonNull MenuItem item) {
 
@@ -36,15 +36,15 @@ public class DashboardActivity extends AppCompatActivity { //run den vai dekhi
                         selectedFragment = new CalenderFragment();
                         break;
 
+                    case R.id.note:
+                        selectedFragment = new NotesFragment();
+                        break;
+
                     case R.id.fvrt:
                         selectedFragment = new FavoriteFragment();
                         break;
 
                     case R.id.settings:
-                        selectedFragment = new NotesFragment();
-                        break;
-
-                    case R.id.note:
                         selectedFragment = new SettingFragment();
                         break;
 
@@ -54,6 +54,6 @@ public class DashboardActivity extends AppCompatActivity { //run den vai dekhi
 
 
             }
-        });*/
+        });
     }
 }

@@ -40,11 +40,11 @@ public class LoginActivity extends AppCompatActivity {
 
 
         bindingLogin.loginBtn.setOnClickListener(v -> {
-            checkcrendentials();
+           // checkcrendentials();
 
 
-//            Intent intent2 = new Intent(LoginActivity.this,DashboardActivity.class);
-//            startActivity(intent2);
+            Intent intent2 = new Intent(LoginActivity.this,DashboardActivity.class);
+            startActivity(intent2);
 
 
         });
@@ -92,7 +92,7 @@ public class LoginActivity extends AppCompatActivity {
         JsonPlaceholderAPI jsonPlaceholderAPI = retrofit.create(JsonPlaceholderAPI.class);
         LoginModel loginModel = new LoginModel();
         loginModel.setUserName(userName);
-        loginModel.setUserName(password);
+        loginModel.setPassword(password);
         Call<LoginModel> call = jsonPlaceholderAPI.loginUser(loginModel);
 
 

@@ -15,18 +15,18 @@
 
     <item
         android:visible="true"
-        android:id="@+id/fvrt"
+        android:id="@+id/blank"
         android:title=""
         />
 
     <item
-        android:id="@+id/settings"
-        android:title="settings"
-        android:icon="@drawable/settings"
+        android:id="@+id/fvrt"
+        android:title="favorite"
+        android:icon="@drawable/fvrt"
         />
 
     <item
-        android:id="@+id/menu_item"
+        android:id="@+id/settings"
         android:title="settings"
         android:icon="@drawable/settings"
         />
