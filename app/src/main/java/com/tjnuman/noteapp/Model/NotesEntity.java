@@ -15,9 +15,6 @@ public class NotesEntity {
     @ColumnInfo(name = "notes_title")
     public String notesTitle;
 
-    @ColumnInfo(name = "notes_subtitle")
-    public String notesSubTitle;
-
     @ColumnInfo(name = "notes")
     public String notes;
 

@@ -24,10 +24,9 @@ public class DashboardActivity extends AppCompatActivity { //run den vai dekhi
         super.onCreate(savedInstanceState);
         setContentView(dashboardBinding.getRoot());
 
-        dashboardBinding.bottomNavigation.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
+        dashboardBinding.bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onNavigationItemReselected(@NonNull MenuItem item) {
-
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment selectedFragment = new CalenderFragment();
 
                 switch (item.getItemId())
@@ -51,8 +50,7 @@ public class DashboardActivity extends AppCompatActivity { //run den vai dekhi
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         selectedFragment).commit();
-
-
+                return false;
             }
         });
     }
