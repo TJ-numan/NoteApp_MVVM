@@ -26,7 +26,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#cc0c52"
-
         android:layout_marginTop="565dp"
         android:src="@drawable/dd"
         android:layout_gravity="end"
