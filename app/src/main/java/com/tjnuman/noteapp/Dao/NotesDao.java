@@ -17,7 +17,7 @@ public interface NotesDao {
     LiveData<List<NotesEntity>> GetAllNotes();
 
     @Insert
-    void insertNotes(NotesEntity... notes);
+    void insertNotes(NotesEntity notes);
 
     @Query("Delete from `Notes Database` where id = :id")
     void deleteNotes(int id);

@@ -11,12 +11,11 @@ import com.tjnuman.noteapp.Dao.NotesDao;
 import com.tjnuman.noteapp.Model.NotesEntity;
 
 
-@Database(entities = {NotesEntity.class},version = 1)
+@Database(entities = {NotesEntity.class},version = 2)
 public abstract class NotesDatabase extends RoomDatabase {
 
     public abstract NotesDao notesDao();
-
-    public static NotesDatabase INSTANCE;
+    public static NotesDatabase  INSTANCE;
 
     public static NotesDatabase getDatabaseInstance(Context context)
     {

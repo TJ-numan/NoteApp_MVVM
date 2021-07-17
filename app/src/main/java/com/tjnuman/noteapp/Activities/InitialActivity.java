@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.tjnuman.noteapp.SessionManager;
+import com.tjnuman.noteapp.Database.SessionManager;
 import com.tjnuman.noteapp.databinding.ActivityInitialBinding;
 
 public class InitialActivity extends AppCompatActivity {

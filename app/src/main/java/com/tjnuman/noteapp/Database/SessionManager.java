@@ -1,4 +1,4 @@
-package com.tjnuman.noteapp;
+package com.tjnuman.noteapp.Database;
 
 import android.content.Context;
 import android.content.SharedPreferences;

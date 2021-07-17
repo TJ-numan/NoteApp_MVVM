@@ -24,6 +24,7 @@ public class NotesRepository {
     }
 
     public void insertNotes(NotesEntity notes){
+
         notesDao.insertNotes(notes);
     }
 

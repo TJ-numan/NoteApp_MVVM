@@ -28,6 +28,8 @@ public class NotesViewModel extends AndroidViewModel {
 
     public void insertNotes(NotesEntity notes)
     {
+
+
         repository.insertNotes(notes);
 
     }

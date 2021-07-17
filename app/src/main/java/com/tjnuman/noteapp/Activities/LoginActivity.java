@@ -5,15 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.util.Patterns;
-import android.view.LayoutInflater;
 import android.widget.Toast;
 
-import com.tjnuman.noteapp.R;
 import com.tjnuman.noteapp.Retrofit.JsonPlaceholderAPI;
 import com.tjnuman.noteapp.Retrofit.LoginModel;
-import com.tjnuman.noteapp.SessionManager;
-import com.tjnuman.noteapp.databinding.ActivityInitialBinding;
+import com.tjnuman.noteapp.Database.SessionManager;
 import com.tjnuman.noteapp.databinding.ActivityLoginBinding;
 
 import retrofit2.Call;
