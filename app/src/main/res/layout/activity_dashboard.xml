@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Activities.DashboardActivity"
     android:background="#f2f2f2">
 
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:id="@+id/coordinatorLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:context=".Activities.DashboardActivity">
 
         <FrameLayout
             android:id="@+id/fragment_container"
@@ -21,31 +17,39 @@
             android:layout_alignParentTop="true"
             android:paddingTop="?attr/actionBarSize" />
 
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomappbar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/white"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp">
+
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigation"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="match_parent"
             android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
             android:background="@color/white"
-            app:fabCradleMargin="10dp"
-            app:itemIconTint="@color/black"
             app:menu="@menu/bottom_menu" />
 
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.google.android.material.bottomappbar.BottomAppBar>
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#cc0c52"
         android:layout_marginTop="650dp"
         android:src="@drawable/home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/coordinatorLayout"
-        app:layout_constraintStart_toStartOf="@+id/coordinatorLayout"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_anchor="@id/bottomappbar"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>

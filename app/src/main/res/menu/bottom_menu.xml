@@ -5,29 +5,28 @@
     <item
         android:id="@+id/calender"
         android:title="calender"
+        android:iconTint="@color/black"
         android:icon="@drawable/nymcalender"
         />
     <item
         android:id="@+id/note"
         android:title="note"
+        android:iconTint="@color/black"
         android:icon="@drawable/note"
         />
 
-    <item
-        android:visible="true"
-        android:id="@+id/blank"
-        android:title=""
-        />
 
     <item
         android:id="@+id/fvrt"
         android:title="favorite"
+        android:iconTint="@color/black"
         android:icon="@drawable/fvrt"
         />
 
     <item
         android:id="@+id/settings"
         android:title="settings"
+        android:iconTint="@color/black"
         android:icon="@drawable/settings"
         />
 

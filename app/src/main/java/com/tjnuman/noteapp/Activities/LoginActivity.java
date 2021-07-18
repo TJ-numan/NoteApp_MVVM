@@ -36,11 +36,11 @@ public class LoginActivity extends AppCompatActivity {
 
 
         bindingLogin.loginBtn.setOnClickListener(v -> {
-           // checkcrendentials();
+            checkcrendentials();
 
 
-            Intent intent2 = new Intent(LoginActivity.this,DashboardActivity.class);
-            startActivity(intent2);
+//            Intent intent2 = new Intent(LoginActivity.this,DashboardActivity.class);
+//            startActivity(intent2);
 
 
         });
@@ -71,6 +71,9 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         else {
+            session.setLoginStatus(true);
+            Intent intent = new Intent(LoginActivity.this,DashboardActivity.class);
+            startActivity(intent);
             login();
         }
 
@@ -99,9 +102,7 @@ public class LoginActivity extends AppCompatActivity {
                 if(!response.isSuccessful()){
                     Toast.makeText(LoginActivity.this, response.code(), Toast.LENGTH_SHORT).show();
                 }else {
-                    session.setLoginStatus(true);
-                    Intent intent = new Intent(LoginActivity.this,DashboardActivity.class);
-                    startActivity(intent);
+
                 }
             }
 

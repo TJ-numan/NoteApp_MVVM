@@ -46,14 +46,6 @@ public class NotesFragment extends Fragment {
         recyclerView = view.findViewById(R.id.recyclerview);
         notesViewModel = ViewModelProviders.of(this).get(NotesViewModel.class);
 
-        notesEntity.notesTitle = "First Title";
-        notesEntity.notes = "fdsafas afdsafrrgtr etgg rt hg t";
-        notesEntity.notesDate = "1/12/21";
-
-        notesEntity1.notesTitle = "Second Title";
-        notesEntity1.notes = "First Titlefdsa af asf asf ";
-        notesEntity1.notesDate = "1/12/21";
-
 
         newNotebutton.setOnClickListener(v -> {
 

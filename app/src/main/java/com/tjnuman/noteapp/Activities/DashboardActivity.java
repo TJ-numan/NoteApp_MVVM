@@ -27,7 +27,7 @@ public class DashboardActivity extends AppCompatActivity { //run den vai dekhi
         dashboardBinding.bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                Fragment selectedFragment = new CalenderFragment();
+                Fragment selectedFragment = null;
 
                 switch (item.getItemId())
                 {

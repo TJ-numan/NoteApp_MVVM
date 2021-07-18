@@ -74,7 +74,7 @@
             tools:ignore="LabelFor" />
     </LinearLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/loginBtn"
         android:layout_width="277dp"
         android:layout_height="49dp"
